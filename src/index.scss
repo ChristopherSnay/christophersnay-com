@@ -1,5 +1,22 @@
-:root {
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;  
+}
+
+body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  height: 100vh;
+}
+
+:root {
+--bs-gutter-x: 0;
+}
+
+.h {
+  &-200 {
+    height: 200px;
+  }
 }

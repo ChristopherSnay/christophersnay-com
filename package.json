@@ -8,8 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "predeploy": "npm run build && cp dist/index.html dist/404.html",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build && copy dist\\index.html dist\\404.html",
+    "deploy": "gh-pages -d dist --cname christophersnay.com"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
