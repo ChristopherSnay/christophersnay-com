@@ -1,15 +1,15 @@
-import { AppBar, Link, Toolbar } from "@mui/material";
-import { Link as RouterLink } from "react-router-dom";
+import { AppBar, Link, Toolbar } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
 
 export default function AppHeader() {
   return (
     <AppBar
       position="static"
       color="primary"
-      elevation={1}
-      className="position-relative"
+      elevation={0}
+      className="position-relative bg-transparent"
     >
-      <Toolbar className="container">
+      <Toolbar className="d-flex justify-content-between container">
         <Link to="/" component={RouterLink} color="inherit" underline="none">
           christophersnay.com
         </Link>
