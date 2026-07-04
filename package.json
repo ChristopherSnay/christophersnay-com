@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "predeploy": "npm run build && copy dist\\index.html dist\\404.html",
+    "predeploy": "npm run build && cpy dist/index.html dist/404.html",
     "deploy": "gh-pages -d dist --cname www.christophersnay.com"
   },
   "dependencies": {
@@ -26,11 +26,13 @@
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.3",
+    "cpy-cli": "^7.0.0",
     "eslint": "^10.6.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.3",
     "gh-pages": "^6.3.0",
     "globals": "^17.7.0",
+    "prettier": "^3.9.4",
     "sass": "^1.101.0",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.62.0",
